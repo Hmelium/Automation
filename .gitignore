@@ -1,0 +1,48 @@
+# Intellij
+.idea/
+*.iml
+*.iws
+out/
+
+# Maven
+log/
+
+#Emacs
+*~
+
+*.bak
+
+# Directories #
+/bin/
+.gradle/
+/.gradle/
+/gradle/
+gradle/
+node/
+node_modules
+
+# OS Files #
+.DS_Store
+ 
+*.class
+ 
+# Package Files #
+*.jar
+*.war
+*.ear
+*.db
+ 
+# Intellij
+/.idea
+*.iml
+*.iws
+
+######################
+# Windows
+######################
+
+# Windows image file caches
+Thumbs.db 
+ 
+# Folder config file
+Desktop.ini
