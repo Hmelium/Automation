@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -25,8 +26,8 @@ public class BaseTest {
     options.addArguments("--disable-dev-shm-usage");
     options.addArguments("--disable-browser-side-navigation");
     options.addArguments("--disable-gpu");
-    driver = new ChromeDriver();
-    driver.manage().window().maximize();
+    options.addArguments("--disable-notifications");
+    driver = new ChromeDriver(options);
   }
 
   @AfterTest
