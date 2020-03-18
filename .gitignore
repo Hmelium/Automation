@@ -36,6 +36,7 @@ node_modules
 /.idea
 *.iml
 *.iws
+target/
 
 ######################
 # Windows
