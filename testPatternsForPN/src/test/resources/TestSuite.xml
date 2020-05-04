@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test" verbose="3">
+
+    <test name="order">
+        <classes>
+            <class name="PriceTest"/>
+            <class name="FilteringTest">
+            <methods>
+                <include name="verifyFiltering" />
+                <include name="validateEnteringCorrectMinFilteringValue" />
+                <exclude name="validateEnterinInvalidMinFilteringValue" />
+            </methods>
+            </class>
+            <class name="LanguageTest"/>
+        </classes>
+    </test>
+
+</suite>
