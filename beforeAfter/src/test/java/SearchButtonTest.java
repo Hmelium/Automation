@@ -14,7 +14,7 @@ public class SearchButtonTest extends BaseTest {
   }
 
   @Test(dataProviderClass = MainPageData.class, dataProvider = "searchData")
-  public void verifySearchButtonText(String product) {
+  public void verifySearch(String product) {
     mainPage.searchProduct(product);
     assertTrue(mainPage.getFirstResultTitle().contains(product));
   }
