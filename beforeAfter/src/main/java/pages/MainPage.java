@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
@@ -30,6 +32,7 @@ public class MainPage {
   }
 
   public String getFirstResultTitle() {
+    new WebDriverWait(driver, 7).until(ExpectedConditions.visibilityOfAllElements(resultsTitle));
     return resultsTitle.get(0).getText();
   }
 }
